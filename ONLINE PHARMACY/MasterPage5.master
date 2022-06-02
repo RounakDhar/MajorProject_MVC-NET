@@ -1,0 +1,132 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage5.master.cs" Inherits="MasterPage5" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+     <style type="text/css">
+        #maindiv {
+            height: 465px;
+        }
+        #header {
+            height: 188px;
+            
+        }
+        .auto-style6 {
+            width: 100%;
+        }
+        .auto-style9 {
+            height: 111px;
+            width: 285px;
+        }
+        #TextBox1{
+            border-bottom-left-radius:10px;
+            border-top-left-radius:10px;
+            width: 419px;
+            margin-left: 0px;
+            height:35px;
+        }
+        #b2{
+            border-bottom-right-radius:10px;
+            border-top-right-radius:10px;
+            width:80px;
+            height:39px;
+            border-style:hidden;
+            border-style:hidden;
+        }
+        .auto-style11 {
+            height: 111px;
+            }
+        .b1{
+            border:hidden;
+            background-color:#006600;
+        }
+        #footer {
+            height: 259px;
+        }
+        .auto-style13 {
+            width: 704px;
+        }
+        #ImageButton1{
+            border-radius: 50px;
+        }
+        #Button1 {
+            width: 56px;
+        }
+        .auto-style16 {
+            height: 68px;
+        }
+        .auto-style17 {
+            height: 68px;
+            width: 893px;
+        }
+        .auto-style18 {
+            height: 68px;
+            width: 122px;
+        }
+        .auto-style19 {
+            height: 68px;
+            width: 114px;
+        }
+    </style>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+</head>
+<body>
+        <form id="form1" runat="server">
+        <div id="maindiv">
+            <div id ="header" style="background-color: #006600">
+
+                <table class="auto-style6">
+                    <tr>
+                        <td class="auto-style9" style="background-repeat: no-repeat; background-attachment: fixed; background-position: center center"></td>
+                        <td class="auto-style13" style="background-position: center center; text-align: center; background-image: url('/photo/LOGO.png'); background-repeat: no-repeat;">
+                              
+                        </td>
+                        <td class="auto-style11" style="text-align: center">
+                            
+                            
+                            </td>
+                    </tr>
+                    </table>
+                    
+                <table class="auto-style6">
+                    <tr>
+                        <td class="auto-style17">
+                  
+                            
+                    
+                       <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" BackColor="#006600" Width="95%" Font-Names="Times New Roman" Font-Size="Large" BorderStyle="None" BorderColor="#006600" s >
+                                <Items>
+                                    <asp:MenuItem NavigateUrl="~/home2_m2.aspx" Text="Home" Value="Home"></asp:MenuItem>
+                                    <asp:MenuItem Text="Healthcare" Value="HEALTHCARE " NavigateUrl="~/shasn001_healthcare.aspx"></asp:MenuItem>
+                                </Items>
+                                <StaticHoverStyle BorderStyle="None" />
+                                <StaticMenuItemStyle BackColor="#006600" Font-Size="Large" ForeColor="White" Height="40px" HorizontalPadding="30px" ItemSpacing="10px" />
+                            </asp:Menu>
+                  
+                            </td>
+                        <td class="auto-style18" style="text-align: center">
+                            &nbsp;</td>
+                        <td class="auto-style19" style="text-align: center">
+                            <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click"><span aria-hidden="true" class="glyphicon glyphicon-gift" style="font-size:25px">Offers</span></asp:LinkButton>
+                            </td>
+                        <td class="auto-style16" style="text-align: center">
+                           <asp:LinkButton ID="LinkButton2" runat="server" OnClick="LinkButton2_Click" ><span aria-hidden="true" class="glyphicon glyphicon-shopping-cart" style="font-size:25px">Cart</span></asp:LinkButton>
+                        </td>
+                    </tr>
+                </table>
+                    
+                &nbsp;</div>
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+            </div>
+    </form>
+</body>
+</html>
